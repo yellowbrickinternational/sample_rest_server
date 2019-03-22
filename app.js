@@ -6,6 +6,10 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
+app.get("/", (req, res, next) => {
+    res.sendStatus(200);
+});
+
 app.post("/pay/ideal", (req, res, next) => {
     console.log(req.params);
     console.log(req.body);
