@@ -1,0 +1,12 @@
+{
+  "name": "rest_server",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "private": true,
+  "dependencies": {
+    "console-stamp": "^0.2.7",
+    "express": "^4.16.4"
+  }
+}
