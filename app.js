@@ -7,6 +7,12 @@ app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 app.get("/", (req, res, next) => {
+    console.log('get /');
+    res.sendStatus(200);
+});
+
+app.get("/pay/ideal", (req, res, next) => {
+    console.log('get /pay/ideal/');
     res.sendStatus(200);
 });
 
